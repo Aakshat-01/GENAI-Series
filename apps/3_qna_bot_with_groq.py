@@ -31,7 +31,10 @@ agent = create_agent(
 
 
 ## Building Web Interface
-
+st.set_page_config(
+    page_title="QuickAnswer - Your Fastest QnA Bot",
+    page_icon="🤖"
+)
 st.subheader("QuickAnswer - Your Fastest QnA Bot")
 
 for message in st.session_state.history:
